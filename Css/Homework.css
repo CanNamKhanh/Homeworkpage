@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+hr {
+    width: 80%;
+}
+
+body {
+    background-color: #CCEDFE;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+header .box {
+    display: flex;
+    height: 100%;
+    width: 80%;
+    flex-direction: column;
+    position: absolute;
+}
+header .box .toplay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+}
+header .box .toplay .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header .box .toplay .logo .more {
+    cursor: pointer;
+}
+header .box .toplay .logo a img {
+    width: 100px;
+    height: 163px;
+}
+header .box .toplay .author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+header .box .toplay .author a img {
+    width: 40px;
+    border-radius: 50%;
+    border: black solid 3px;
+}
+header .box .toplay .menu {
+    display: flex;
+    gap: 50px;
+}
+
+main {
+    position: relative;
+    background-color: #CCEDFE;
+    top: -20px;
+    width: 100%;
+    height: 600px;
+}
+main aside {
+    display: none;
+}
+main .container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* border: blue solid; */
+}
+main .container .decor img {
+    width: 600px;
+    position: absolute;
+    right: 0;
+}
+main .container .des {
+    position: absolute;
+    top: 60px;
+    left: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .container .des h1 {
+    font-size: 5em;
+    color: #2d4b75;
+}
+main .container .des p {
+    color: #2d4b75;
+}
+main .container .hwlist {
+    height: 300px;
+    width: 700px;
+    position: absolute;
+    top: 400px;
+    /* border: solid red; */
+    left: 170px;
+    top: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+main .container .hwlist .title {
+    font-size: 2em;
+}
+main .container .hwlist .items {
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 50px;
+    /* border: red solid; */
+}
+main .container .hwlist .items div[class*="item"] {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    font-weight: 700;
+    position: relative;
+}
+main .container .hwlist .items div[class*="item"] .title {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+main .container .hwlist .items div[class*="item"] i {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 4em;
+    color: #516075;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: red solid; */
+    line-height: 1.5;
+}
+footer .credit .origin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+footer .credit .des {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
