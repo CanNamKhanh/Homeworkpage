@@ -16,7 +16,9 @@
         <div class="toplay">
           <div class="logo">
             <div class="more">
-              <i class="fa-solid fa-bars"></i>
+              <label for="lbl_open">
+                <i class="fa-solid fa-bars" style="cursor: pointer"></i>
+              </label>
             </div>
             <a href="#">
               <img src="./images/head.png" alt="" />
@@ -24,9 +26,18 @@
           </div>
           <!-- End .logo -->
           <nav class="menu">
-            <a href="#">Trang chủ</a>
-            <a href="#">Bài tập</a>
-            <a href="#">Nhận xét</a>
+            <div class="home">
+              <a href="#">Trang chủ</a>
+              <span></span>
+            </div>
+            <div class="ex">
+              <a href="#">Bài tập</a>
+              <span></span>
+            </div>
+            <div class="comment">
+              <a href="#">Nhận xét</a>
+              <span></span>
+            </div>
           </nav>
           <!-- End .menu -->
           <div class="author">
@@ -40,28 +51,34 @@
     </header>
     <!-- End header -->
     <main>
+      <input type="checkbox" id="lbl_open" hidden />
+      <label for="lbl_open" class="overlay">
+        <div class="overlay"></div>
+      </label>
       <aside>
         <div class="bgcolor">
           <h2>Change Background Color</h2>
-          <label for=""><i class="fa-solid fa-xmark"></i></label>
-          <div class="dark">
-            <p>Dark</p>
-            <label for="lbl_dark"></label>
-            <input type="checkbox" id="lbl_dark" />
+          <label for="lbl_open" style="cursor: pointer"
+            ><i class="fa-solid fa-xmark"></i
+          ></label>
+          <div class="color">
+            <div class="dark">
+              <label for="lbl_bgcolor" class="button">
+                <div class="button"></div>
+              </label>
+              <label for="lbl_bgcolor">Dark</label>
+              <input type="checkbox" id="lbl_bgcolor" hidden />
+            </div>
+            <!-- End .dark -->
+            <div class="light">
+              <label for="lbl_bgcolor" class="button">
+                <div class="button"></div>
+              </label>
+              <label for="lbl_bgcolor">Light</label>
+              <input type="checkbox" id="lbl_bgcolor" hidden />
+            </div>
+            <!-- End .light -->
           </div>
-          <!-- End .dark -->
-          <div class="light">
-            <p>Light</p>
-            <label for="lbl_light"></label>
-            <input type="checkbox" id="lbl_light" />
-          </div>
-          <!-- End .light -->
-          <div class="default">
-            <p>Default</p>
-            <label for="lbl_default"></label>
-            <input type="checkbox" id="lbl_default" />
-          </div>
-          <!-- End .default -->
         </div>
         <!-- End .bgcolor -->
       </aside>
@@ -78,23 +95,21 @@
         <div class="hwlist">
           <h2 class="title">Bài Tập Ngày: 28/8/2025</h2>
           <div class="items">
-            <div class="item1">
-              <div class="title">
-                <a href="https://cannamkhanh.github.io/Homework_28-8/Bai1?#"
-                  >Bài 1
-                </a>
-              </div>
+            <a
+              href="https://cannamkhanh.github.io/Homework_4-9/ex01"
+              class="item1"
+            >
+              <div class="title">Bài 1</div>
               <i class="fa-solid fa-paw"></i>
-            </div>
+            </a>
             <!-- End .item1 -->
-            <div class="item2">
-              <div class="title">
-                <a href="https://cannamkhanh.github.io/Homework_28-8/Bai2"
-                  >Bài 2
-                </a>
-              </div>
+            <a
+              href="https://cannamkhanh.github.io/Homework_4-9/ex02"
+              class="item2"
+            >
+              <div class="title">Bài 2</div>
               <i class="fa-solid fa-paw"></i>
-            </div>
+            </a>
             <!-- End .item2 -->
           </div>
           <!-- End .items -->
